@@ -1,3 +1,11 @@
+//
+//  BatteryAttributes.swift
+//  Wiesenbatterie
+//
+//  Created by Manuel on 27.12.25.
+//
+
+
 import ActivityKit
 import SwiftUI
 

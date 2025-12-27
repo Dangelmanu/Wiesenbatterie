@@ -6,14 +6,85 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		645BE88F2F003AA7003D1038 /* CocoaMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = 645BE88E2F003AA7003D1038 /* CocoaMQTT */; };
+		645BE8912F003AA7003D1038 /* CocoaMQTTWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 645BE8902F003AA7003D1038 /* CocoaMQTTWebSocket */; };
+		64EA3A6C2F00477D00A72EA9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EA3A6B2F00477D00A72EA9 /* WidgetKit.framework */; };
+		64EA3A6E2F00477D00A72EA9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EA3A6D2F00477D00A72EA9 /* SwiftUI.framework */; };
+		64EA3A7D2F00477F00A72EA9 /* BatteryWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 64EA3A692F00477D00A72EA9 /* BatteryWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64EA3A7B2F00477F00A72EA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 645BE8692F0036FE003D1038 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64EA3A682F00477D00A72EA9;
+			remoteInfo = BatteryWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64EA3A822F00477F00A72EA9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				64EA3A7D2F00477F00A72EA9 /* BatteryWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		645BE8712F0036FF003D1038 /* Wiesenbatterie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wiesenbatterie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EA3A692F00477D00A72EA9 /* BatteryWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BatteryWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EA3A6B2F00477D00A72EA9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		64EA3A6D2F00477D00A72EA9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		645BE8872F0038BD003D1038 /* Exceptions for "Wiesenbatterie" folder in "Wiesenbatterie" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 645BE8702F0036FF003D1038 /* Wiesenbatterie */;
+		};
+		64EA3A812F00477F00A72EA9 /* Exceptions for "BatteryWidget" folder in "BatteryWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 64EA3A682F00477D00A72EA9 /* BatteryWidgetExtension */;
+		};
+		64EA3A842F0047F600A72EA9 /* Exceptions for "Wiesenbatterie" folder in "BatteryWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BatteryAttributes.swift,
+			);
+			target = 64EA3A682F00477D00A72EA9 /* BatteryWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		645BE8732F0036FF003D1038 /* Wiesenbatterie */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				645BE8872F0038BD003D1038 /* Exceptions for "Wiesenbatterie" folder in "Wiesenbatterie" target */,
+				64EA3A842F0047F600A72EA9 /* Exceptions for "Wiesenbatterie" folder in "BatteryWidgetExtension" target */,
+			);
 			path = Wiesenbatterie;
+			sourceTree = "<group>";
+		};
+		64EA3A6F2F00477D00A72EA9 /* BatteryWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				64EA3A812F00477F00A72EA9 /* Exceptions for "BatteryWidget" folder in "BatteryWidgetExtension" target */,
+			);
+			path = BatteryWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +94,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				645BE8912F003AA7003D1038 /* CocoaMQTTWebSocket in Frameworks */,
+				645BE88F2F003AA7003D1038 /* CocoaMQTT in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EA3A662F00477D00A72EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EA3A6E2F00477D00A72EA9 /* SwiftUI.framework in Frameworks */,
+				64EA3A6C2F00477D00A72EA9 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				645BE8732F0036FF003D1038 /* Wiesenbatterie */,
+				64EA3A6F2F00477D00A72EA9 /* BatteryWidget */,
+				64EA3A6A2F00477D00A72EA9 /* Frameworks */,
 				645BE8722F0036FF003D1038 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +125,18 @@
 			isa = PBXGroup;
 			children = (
 				645BE8712F0036FF003D1038 /* Wiesenbatterie.app */,
+				64EA3A692F00477D00A72EA9 /* BatteryWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		64EA3A6A2F00477D00A72EA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64EA3A6B2F00477D00A72EA9 /* WidgetKit.framework */,
+				64EA3A6D2F00477D00A72EA9 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,20 +149,46 @@
 				645BE86D2F0036FF003D1038 /* Sources */,
 				645BE86E2F0036FF003D1038 /* Frameworks */,
 				645BE86F2F0036FF003D1038 /* Resources */,
+				64EA3A822F00477F00A72EA9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				64EA3A7C2F00477F00A72EA9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				645BE8732F0036FF003D1038 /* Wiesenbatterie */,
 			);
 			name = Wiesenbatterie;
 			packageProductDependencies = (
+				645BE88E2F003AA7003D1038 /* CocoaMQTT */,
+				645BE8902F003AA7003D1038 /* CocoaMQTTWebSocket */,
 			);
 			productName = Wiesenbatterie;
 			productReference = 645BE8712F0036FF003D1038 /* Wiesenbatterie.app */;
 			productType = "com.apple.product-type.application";
+		};
+		64EA3A682F00477D00A72EA9 /* BatteryWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64EA3A7E2F00477F00A72EA9 /* Build configuration list for PBXNativeTarget "BatteryWidgetExtension" */;
+			buildPhases = (
+				64EA3A652F00477D00A72EA9 /* Sources */,
+				64EA3A662F00477D00A72EA9 /* Frameworks */,
+				64EA3A672F00477D00A72EA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				64EA3A6F2F00477D00A72EA9 /* BatteryWidget */,
+			);
+			name = BatteryWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = BatteryWidgetExtension;
+			productReference = 64EA3A692F00477D00A72EA9 /* BatteryWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +203,9 @@
 					645BE8702F0036FF003D1038 = {
 						CreatedOnToolsVersion = 26.2;
 					};
+					64EA3A682F00477D00A72EA9 = {
+						CreatedOnToolsVersion = 26.2;
+					};
 				};
 			};
 			buildConfigurationList = 645BE86C2F0036FE003D1038 /* Build configuration list for PBXProject "Wiesenbatterie" */;
@@ -94,18 +217,29 @@
 			);
 			mainGroup = 645BE8682F0036FE003D1038;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				645BE88D2F003AA7003D1038 /* XCRemoteSwiftPackageReference "CocoaMQTT" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 645BE8722F0036FF003D1038 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				645BE8702F0036FF003D1038 /* Wiesenbatterie */,
+				64EA3A682F00477D00A72EA9 /* BatteryWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		645BE86F2F0036FF003D1038 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EA3A672F00477D00A72EA9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +256,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64EA3A652F00477D00A72EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64EA3A7C2F00477F00A72EA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64EA3A682F00477D00A72EA9 /* BatteryWidgetExtension */;
+			targetProxy = 64EA3A7B2F00477F00A72EA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		645BE87A2F003700003D1038 /* Debug */ = {
@@ -251,8 +400,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5CMV26QAK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Wiesenbatterie/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -263,7 +415,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.manuel.wiesenbatterie.Wiesenbatterie;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuel.wiesenbatterie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -282,8 +434,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5CMV26QAK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Wiesenbatterie/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -294,11 +449,71 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.manuel.wiesenbatterie.Wiesenbatterie;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuel.wiesenbatterie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64EA3A7F2F00477F00A72EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5CMV26QAK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BatteryWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BatteryWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuel.wiesenbatterie.BatteryWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64EA3A802F00477F00A72EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5CMV26QAK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BatteryWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BatteryWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuel.wiesenbatterie.BatteryWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,7 +542,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		64EA3A7E2F00477F00A72EA9 /* Build configuration list for PBXNativeTarget "BatteryWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64EA3A7F2F00477F00A72EA9 /* Debug */,
+				64EA3A802F00477F00A72EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		645BE88D2F003AA7003D1038 /* XCRemoteSwiftPackageReference "CocoaMQTT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emqx/CocoaMQTT";
+			requirement = {
+				kind = exactVersion;
+				version = 2.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		645BE88E2F003AA7003D1038 /* CocoaMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 645BE88D2F003AA7003D1038 /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
+			productName = CocoaMQTT;
+		};
+		645BE8902F003AA7003D1038 /* CocoaMQTTWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 645BE88D2F003AA7003D1038 /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
+			productName = CocoaMQTTWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 645BE8692F0036FE003D1038 /* Project object */;
 }
